@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0 auto;
+	font-size: 11pt;
+	line-height: 1.2;
+	font-family: 'Roboto', sans-serif;
+
+	width: 210mm;
+	/* border: 1px solid black; */
+}
+ul,
+ol {
+	line-height: 1.3;
+}
+p {
+	margin-bottom: 5px;
+	font-size: 11pt;
+}
+i {
+	font-size: 10pt;
+	margin-right: 5px;
+}
+li {
+	font-size: 10.5pt;
+}
+h5 {
+	font-size: 11pt;
+	font-weight: 500;
+	margin-bottom: 4px;
+}
+h2 {
+	margin-bottom: 5px;
+	font-size: 20px;
+
+	text-align: center;
+}
+section {
+	margin: 0 1cm 0 1cm;
+}
+section::after {
+	content: '';
+	border-bottom: 1px solid black;
+	margin: 10px auto 10px auto;
+	display: block;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5cm;
+	margin-top: 0.5cm;
+}
+header ul {
+	list-style: none;
+}
+small {
+	font-size: 10pt;
+	font-style: italic;
+}
+.operations {
+	font-weight: normal;
+	font-size: 10.5pt;
+}
+.skills > ul {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+}
+.skills li {
+	padding: 5px 10px;
+	border: 0.5px solid lightslategrey;
+	border-radius: 3px;
+	margin-right: 5px;
+}
+.tech-stack {
+	width: 90%;
+	margin: 0 auto;
+}
+.tech-list {
+	display: flex;
+}
+.tech-list > li {
+	list-style: none;
+}
+
+.tech-list ol {
+	margin-left: 16px;
+}
+
+.tech-list-right {
+	margin-left: 20px;
+}
+
+.easy-vault {
+	margin-bottom: 20px;
+}
+.demo ul {
+	list-style: none;
+}
+.tech-type {
+	border-bottom: 1px dashed black;
+}
+@media print {
+	.projects {
+		page-break-after: always;
+	}
+	.education {
+		margin-top: 1cm;
+	}
+}
+
+.job-description > li {
+	margin-left: 20px;
+	margin-bottom: 4px;
+}
+.activities__list {
+	margin-left: 20px;
+}
+.project-2-list {
+	margin-left: 20px;
+}
+
+.info-card {
+	display: flex;
+	margin-bottom: 5px;
+}
+.info-head {
+	width: 30%;
+}
