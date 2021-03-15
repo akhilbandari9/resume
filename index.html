@@ -20,7 +20,7 @@
 		<header class="header">
 			<div class="heading">
 				<h1 class="title">Akhil Bandari</h1>
-				<small class="small"> Junior Front End Developer </small>
+				<small class="small"> Junior Web Developer </small>
 			</div>
 			<div class="contact">
 				<ul class="contact-list">
@@ -46,7 +46,7 @@
 				<li>ReactJs</li>
 				<li>Redux</li>
 				<li>NodeJS</li>
-				<li>Bootsrap</li>
+				<li>Bootstrap</li>
 				<li>Sass</li>
 				<li>SQL</li>
 			</ul>
@@ -54,88 +54,108 @@
 		<section class="career">
 			<h2>Career</h2>
 			<div class="job-card">
-				<h5>
-					<span>Job Title : </span>Tron Analyst
-					<span class="operations">(Operations Associate)</span>
-				</h5>
+				<h5><span>Job Title : </span>Tron Analyst</h5>
 
-				<p><span>Organization : </span>Amazon Development Center</p>
+				<p id="job-title">
+					<span>Organization : </span>Amazon Development Center
+				</p>
 				<p><span>Duration : </span> February 2019 - June 2020</p>
 
 				<div>
 					<span>Description : </span>
-					<ul class="job-description">
-						<li>
-							Tron is a technology which enables humansupervisory control of
-							automated tasks in synchronization with amazon robotics team to
-							remotely provide assistance in AR enabled fulfillment centers.
-						</li>
-						<li>
-							Responsibility in here is to work on Machine learning where the
-							process acts as a bridge between automated AI and manual which
-							saves lots of time.
-						</li>
-						<li>
-							Worked on Tron beta phase and helped the project to get live and
-							generated reports detailing findings andrecommendations.
-						</li>
+					<p>
+						Tron is a Amazon's internal project for enabling human supervisory
+						of automated tasks in synchronization with amazon's robotics team to
+						remotely provide assistance in AR enabled fulfillment centers.
+					</p>
+					<ul>
+						As a part of Development Team I worked on :
+						<ol class="job-description">
+							<li>
+								tools to help the Tron Operational Team to achieve their goals
+								and improve their results
+							</li>
+							<li>
+								Collaborated with team of 8 members (Beta Phase) in the
+								development and designing of am Analytics Application
+							</li>
+							<li>
+								Worked on the design and functionality of UI components of the
+								application
+							</li>
+							<li>
+								Optimized the load time of pages by reducing network requests,
+								and component re-renders
+							</li>
+							<li>Developed new features and fixed bugs</li>
+							<li>Reorganized code to improve code sharing</li>
+						</ol>
 					</ul>
 				</div>
-				<div>
+				<!-- <div>
 					<span>Accomplishments : </span>
-					<ul class="job-description">
-						<li>
-							Collaborated with team of 8 members in the development and
-							designing of NIKE CLV HMI tool (Human machine interface).
-						</li>
-						<li>
-							Supervised a team of 15 associates by maintaining metrics,
-							compiling timely reports by providing feedback to the associates.
-						</li>
-						<li>
-							Documented the issues in HMI tool by escalating it to the amazon
-							Robotics team.
-						</li>
-					</ul>
-				</div>
+					<ul class="job-description"></ul>
+				</div> -->
 			</div>
 		</section>
 		<section class="projects">
 			<h2>Projects</h2>
+			<h4>Project - 1</h4>
 			<div class="easy-vault">
 				<h5><span> Title - </span>Easy vault</h5>
 				<p class="about">
 					<span>About : </span> Easy Vault is a React App, which serves as a
 					vault for your private information like Contacts, Passwords and Notes.
 					<br />
-					I created this project to learn and showcase my skills in ReactJS,
-					basic CRUD operations using Express, MongoDB-Mongoose and setting up
-					Authentication.
+					I created this project to learn and showcase my skills in ReactJS and
+					basic CRUD operations.
 				</p>
+				<h4>Duration :</h4>
+				<p>September 2020 - October 2020</p>
 				<div class="tech-stack">
-					<h5>Technologies Used</h5>
+					<h4>Technologies Used :</h4>
 					<ul class="tech-list">
-						<li class="tech-list-left">
-							<span class="tech-type">Front End</span>
-							<ol>
-								<li>ReactJS - Javascript library</li>
-								<li>Bootstrap - UI library</li>
-								<li>Context API - State Management for ReactJS</li>
-								<li>React Router - App router for React</li>
-							</ol>
-						</li>
-						<li class="tech-list-right">
+						<p class="tech-list-left">
+							<span class="tech-type">Front End :</span>
+							ReactJs, ContextAPI, Bootstrap, React-router
+						</p>
+						<p class="tech-list-right">
 							<span class="tech-type">Back End</span>
-							<ol>
-								<li>NodeJS</li>
-								<li>Express - NodeJS framework</li>
-								<li>Mongoose - MongoDB ORM</li>
-								<li>Json Web Token - User Authentication</li>
-								<li>MongoDB Atlas - DBMS for the app</li>
-							</ol>
-						</li>
+							Nodejs, Express, MongoDB Atlas, Json Web Token
+						</p>
 					</ul>
 				</div>
+				<div class="details">
+					<h4>Description:</h4>
+					<h5>Backend</h5>
+					<ol>
+						<li>
+							Setup Data Models for Users, Contacts, Passwords, Notes Features
+							by creating schemas with Mongoose
+						</li>
+						<li>Created routes for CRUD operations and Authentication</li>
+						<li>
+							Implemented user authentication with Json Web Token and password
+							encryption
+						</li>
+					</ol>
+					<h5 class="page-break">Frontend</h5>
+					<ol>
+						<li>
+							Used React's Context API as app level state management system
+						</li>
+						<li>Created seperate sections for the 3 features of the app.</li>
+						<li>Provided secure routes for all 3 sections</li>
+						<li>Setup App routes with React Router library</li>
+						<li>
+							The three sections have a common system of submitting the input
+							data to populate it to the database.
+						</li>
+						<li>Search feature is implemented</li>
+						<li>The App is mobile responsive</li>
+					</ol>
+				</div>
+
 				<div class="demo">
 					<ul class="demo__links">
 						<li>
@@ -147,22 +167,29 @@
 					</ul>
 				</div>
 			</div>
+
 			<div class="recipe-finder">
+				<h4>Project - 2</h4>
 				<h5><span>Title : </span>Recipe Finder</h5>
-				<p class="about">
-					<span>About : </span> I created this project as a part of Javascript
-					course by Jonas Schmedtmann, which is where I gathered most of my
-					Javascript knowledge. <br />
-					This is a Javascript application which fetches a list of recipes from
-					external REST API, displays recipe information and gives an option to
-					customize the recipe. A simple MVC pattern is implemented in this app.
-				</p>
+
 				<div class="tech-stack">
 					<h5>Technologies Used</h5>
-					<ol class="project-2-list">
-						<li>Javascript</li>
-						<li>Fetch API</li>
-						<li>CSS</li>
+					<p class="project-2-list">Html, CSS, JavaScript</p>
+				</div>
+				<div class="details">
+					<h4>Description</h4>
+					<ol>
+						<li>
+							This is a Javascript application which fetches a list of recipes
+							from external REST API, displays recipe information and gives an
+							option to customize the recipe.
+						</li>
+						<li>A simple MVC pattern is implemented in this app.</li>
+						<li>
+							The app mocks template based frontend style of rendering data (no
+							external libraries used).
+						</li>
+						<li>Pagination for the list of results fetched is implemented.</li>
 					</ol>
 				</div>
 				<div class="demo">
