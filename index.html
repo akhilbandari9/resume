@@ -14,281 +14,320 @@
 			integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
 			crossorigin="anonymous"
 		/>
+		<link
+			href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
 		<title>Resume</title>
 	</head>
 	<body>
-		<header class="header">
-			<div class="heading">
-				<h1 class="title">Akhil Bandari</h1>
-				<small class="small"> Web Developer </small>
-			</div>
-			<div class="contact">
-				<ul class="contact-list">
-					<li>
-						<span><i class="far fa-envelope"></i></span>
-						akhilbandari9999@gmail.com
-					</li>
-					<li>
-						<span><i class="fas fa-phone"></i></span> +91 7032035933
-					</li>
-					<li>
-						<span><i class="fas fa-map-marker-alt"></i></span> Hyderabad, India
-					</li>
-				</ul>
-			</div>
-		</header>
+		<div id="root" class="flex mx-auto" style="width: 210mm">
+			<header
+				class="text-gray-100 pt-6 px-4"
+				style="background-color: #252561; min-width: 70mm"
+			>
+				<div class="flex flex-col items-center flex-wrap list-none gap-2">
+					<h1 class="text-4xl text-center font-medium">Akhil Bandari</h1>
+					<small class="text-xs"> Web Developer </small>
+					<ul class="flex flex-col gap-2 mt-3 text-sm">
+						<li class="">akhilbandari9999@gmail.com</li>
+						<li>
+							<span><i class="fas fa-phone mr-3"></i></span> +91 7032035933
+						</li>
+						<li>
+							<span><i class="fas fa-map-marker-alt mr-3"></i></span> Hyderabad,
+							India
+						</li>
+					</ul>
+				</div>
+				<div class="contact">
+					<ul class="contact-list"></ul>
+				</div>
+				<section class="mt-6">
+					<h2 class="text-2xl font-medium underline mb-4">Skills</h2>
+					<ul class="flex flex-col gap-2">
+						<li><i class="fas fa-code-branch mr-2"></i>Javascript</li>
+						<li><i class="fas fa-code-branch mr-2"></i>ReactJs</li>
+						<li><i class="fas fa-code-branch mr-2"></i>NodeJs</li>
+						<li><i class="fas fa-code-branch mr-2"></i>ExpressJs</li>
+						<li><i class="fas fa-code-branch mr-2"></i>Redux</li>
+						<li><i class="fas fa-code-branch mr-2"></i>Git and Github</li>
+						<li><i class="fas fa-code-branch mr-2"></i>CSS3 and Sass</li>
+						<li><i class="fas fa-code-branch mr-2"></i>HTML5</li>
+						<li><i class="fas fa-code-branch mr-2"></i>Firebase</li>
+						<li><i class="fas fa-code-branch mr-2"></i>MongoDb</li>
+						<li><i class="fas fa-code-branch mr-2"></i>SQL</li>
+						<li><i class="fas fa-code-branch mr-2"></i>Web Sockets</li>
+						<li><i class="fas fa-code-branch mr-2"></i>Tailwindcss</li>
+						<li><i class="fas fa-code-branch mr-2"></i>Bootstrap</li>
+						<li><i class="fas fa-code-branch mr-2"></i>Visual Studio Code</li>
+					</ul>
+				</section>
+			</header>
+			<main class="pt-4 px-6">
+				<section class="pb-4 border-b-2">
+					<h2 class="text-2xl font-medium underline mb-2 text-center">
+						Career
+					</h2>
 
-		<section class="skills">
-			<h2>Skills</h2>
-			<ul>
-				<li>Javascript</li>
-				<li>ReactJs</li>
-				<li>Visual Studio Code</li>
-				<li>NodeJS</li>
-				<li>Redux</li>
-				<li>CSS</li>
-				<li>Sass</li>
-				<li>SQL</li>
-				<li>Firebase</li>
-				<li>Tailwindcss</li>
-				<li>Web Sockets</li>
-				<li>MongoDb</li>
-			</ul>
-		</section>
-		<section class="career">
-			<h2>Career</h2>
-			<div class="job-card">
-				<h5><span>Job Title : </span>Tron Analyst</h5>
+					<h4 class="font-medium"><span>Job Title : </span>Tron Analyst</h4>
 
-				<p id="job-title">
-					<span>Organization : </span>Amazon Development Center
-				</p>
-				<p><span>Duration : </span> February 2019 - June 2020</p>
+					<p id="job-title">
+						<span>Organization : </span>Amazon Development Center
+					</p>
+					<p><span>Duration : </span> February 2019 - June 2020</p>
 
-				<div>
-					<span>Description : </span>
+					<div class="mt-2">
+						<span class="font-medium">Description : </span>
+						<ul
+							class="
+								list-inside list-disc
+								w-full
+								flex-wrap
+								justify-between
+								items-center
+								flex-shrink
+							"
+						>
+							<li>
+								TRON team assists Amazon's robitics team to remotely handle
+								exceptions in Amazon Robotic Fulfillment centers
+							</li>
+							<li>
+								Provided supervisory control when automated tasks fail for any
+								reason.
+							</li>
+							<li>
+								Worked on TRON beta phase and helped the project to get live and
+								generated reports detailing findings and recommendations.
+							</li>
+							<li>
+								Extended support for Amazon robitics team in improving the
+								backend stow defect identification algorithm using AI.
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- Projects -->
+				<section class="mt-2 pb-4 border-b-2">
+					<h2 class="text-2xl font-medium underline mb-2 text-center">
+						Projects
+					</h2>
+					<div class="pb-2 border-b">
+						<h5 class="font-medium text-lg">
+							<span class="font-normal"> Title - </span>Fuse Social
+						</h5>
+						<ul class="list-disc list-inside">
+							<li>
+								Fuse Social is a scalable and performant
+								<span class="font-medium">Social media application</span> . The
+								design is inspired from Instagram.
+							</li>
+							<li>
+								It has all the necessary features of a social media app, those
+								include adding friends, posting photos, commenting on photos,
+								liking photos, suggested users
+							</li>
+							<li>
+								All the data is saved and persisted to Google's Cloud Firebase
+							</li>
+						</ul>
+						<div class="mt-2">
+							<h4 class="font-medium">Technologies Used :</h4>
+							<ul class="flex justify-around">
+								<ol class="flex flex-col list-decimal list-inside">
+									<p class="underline">Front End :</p>
+									<li>ReactJs</li>
+									<li>ContextAPI</li>
+									<li>Tailwindcss</li>
+									<li>React-router</li>
+								</ol>
+								<ol class="tech-list-right list-decimal list-inside">
+									<p class="underline">Back End :</p>
+									<li>Firebase Firestore</li>
+									<li>Firebase Auth</li>
+									<li>Firebase Storage</li>
+								</ol>
+							</ul>
+						</div>
+						<ul class="mt-2 italic underline flex gap-8">
+							<li>
+								<a href="https://github.com/akhilbandari9/fuse-social"
+									>Github Repository <i class="fas fa-external-link-alt"></i
+								></a>
+							</li>
+							<li>
+								<a href="https://fuse-social.vercel.app"
+									>Live Demo <i class="fas fa-external-link-alt"></i
+								></a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="mt-2 pb-2 border-b">
+						<h5 class="font-medium text-lg">
+							<span class="font-normal"> Title - </span>Orange Notes
+						</h5>
+						<ul class="list-disc list-inside">
+							<li>
+								This is a
+								<span class="font-medium">Note taking application</span>
+								inspired from Google Keep. It is a simple application which lets
+								you take notes and organize them as well.
+							</li>
+							<li>
+								It has features like Taking Note, Updating Note, Moving notes to
+								Bin, Restoring from bin, Adding Labels to the notes, Filtering
+								by labels, Adding Colors to notes, Sharing a single note with
+								sharable public link, Toast notifications
+							</li>
+							<li>
+								This is highly performant, has smooth UI, fully responsive.
+							</li>
+							<li>All notes are saved and persisted to MongoDB Cloud.</li>
+						</ul>
+						<div class="mt-2">
+							<h4 class="font-medium">Technologies Used :</h4>
+							<ul class="flex justify-around">
+								<ol class="flex flex-col list-decimal list-inside">
+									<p class="underline">Front End :</p>
+									<li>ReactJs</li>
+									<li>ContextAPI</li>
+									<li>Chakra UI</li>
+								</ol>
+								<ol class="tech-list-right list-decimal list-inside">
+									<p class="underline">Back End :</p>
+									<li>NodeJs</li>
+									<li>ExpressJs</li>
+									<li>MongoDB</li>
+								</ol>
+							</ul>
+						</div>
+
+						<ul class="mt-2 italic underline flex gap-8">
+							<li>
+								<a href="https://github.com/akhilbandari9/ornage-notes-client"
+									>Client Github Repo</a
+								><i class="fas fa-external-link-alt"></i>
+							</li>
+							<li>
+								<a href="https://github.com/akhilbandari9/ornage-notes-server"
+									>Server Github Repo</a
+								><i class="fas fa-external-link-alt"></i>
+							</li>
+							<li>
+								<a href="https://orange-notes.vercel.app">Live Demo</a
+								><i class="fas fa-external-link-alt"></i>
+							</li>
+						</ul>
+					</div>
+					<div class="mt-2 pb-2">
+						<h5 class="font-medium text-lg __print_media__">
+							<span class="font-normal"> Title - </span>Recipe Finder
+						</h5>
+						<ul class="list-disc list-inside">
+							<li>
+								This is a Javascript application which fetches a list of recipes
+								from external Third party REST API, displays recipe information
+								and gives an option to customize the recipe.
+							</li>
+							<li>
+								The app ues string templates to inject dynamic data to the HTML
+								page (no external libraries used).
+							</li>
+							<li>
+								Pagination for the list of results fetched is implemented for
+								the font end.
+							</li>
+						</ul>
+						<div class="mt-2">
+							<h4 class="font-medium">Technologies Used :</h4>
+							<ul class="flex justify-around">
+								<ol class="flex flex-col list-decimal list-inside">
+									<p class="underline">Front End :</p>
+									<li>Javascript</li>
+									<li>HTML5</li>
+									<li>CSS3</li>
+								</ol>
+								<ol class="tech-list-right list-decimal list-inside">
+									<p class="underline">Back End :</p>
+									<li>Third party API</li>
+								</ol>
+							</ul>
+						</div>
+						<ul class="mt-2 italic underline flex gap-8">
+							<li>
+								<a href="https://github.com/akhilbandari9/recipe-search"
+									>Github Repository <i class="fas fa-external-link-alt"></i
+								></a>
+							</li>
+							<li>
+								<a href="https://recipe99.netlify.app/"
+									>Live Demo <i class="fas fa-external-link-alt"></i
+								></a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- Education -->
+				<section class="mt-2 pb-4 border-b-2">
+					<h2 class="text-2xl font-medium underline mb-2 text-center">
+						Education
+					</h2>
+					<h5 class="font-medium">
+						Bachelor of Technology
+						<span class="font-normal"> ( 2013 - 2017 ) </span>
+					</h5>
+					<p><span>Course : </span>Electronics and Communications</p>
 					<p>
-						Tron is a Amazon's internal project for enabling human supervisory
-						of automated tasks in synchronization with amazon's robotics team to
-						remotely provide assistance in AR enabled fulfillment centers.
+						Institution :
+						<span class="font-medium"
+							>Sreenidhi Institute of Science and Technology</span
+						>
 					</p>
-					<ul>
-						As a part of Development Team I worked on :
-						<ol class="job-description">
+					<p>Grades : <span class="font-medium"> 74.8%</span></p>
+					<div class="activities">
+						<h5 class="font-medium">Activities :</h5>
+						<ul class="list-disc list-inside">
 							<li>
-								tools to help the Tron Operational Team to achieve their goals
-								and improve their results
+								Contributed to a creative arts club called Inovation and
+								Creativity Club
 							</li>
-							<li>
-								Collaborated with team of 8 members (Beta Phase) in the early
-								phase of project and helped delivering good results
-							</li>
-						</ol>
-					</ul>
-				</div>
-				<!-- <div>
-					<span>Accomplishments : </span>
-					<ul class="job-description"></ul>
-				</div> -->
-			</div>
-		</section>
-		<section class="projects">
-			<h2>Projects</h2>
-			<h4>Project - 1</h4>
-			<div class="easy-vault">
-				<h5><span> Title - </span>Fuse Social</h5>
-				<p class="about">
-					<span>About : </span> Fuse Social is a scalable and performant social
-					media application. The design is inspired from Instagram. It has all
-					the necessary features of a social media app, those include adding
-					friends, posting photos, commenting on photos, liking photos,
-					suggested users
-				</p>
-				<div class="tech-stack">
-					<h4>Technologies Used :</h4>
-					<ul class="tech-list">
-						<p class="tech-list-left">
-							<span class="tech-type">Front End :</span>
-							ReactJs, ContextAPI, Tailwindcss, React-router, React lazy, React
-							Hooks
-						</p>
-						<p class="tech-list-right">
-							<span class="tech-type">Back End</span>
-							Firebase Auth, Firebase Firestore, Firebase Storage
-						</p>
-					</ul>
-				</div>
-				<!-- <div class="details">
-					<h4>Description:</h4>
-					<h5>Backend</h5>
-					<ol>
-						<li>
-							Setup Data Models for Users, Contacts, Passwords, Notes Features
-							by creating schemas with Mongoose
-						</li>
-						<li>Created routes for CRUD operations and Authentication</li>
-						<li>
-							Implemented user authentication with Json Web Token and password
-							encryption
-						</li>
-					</ol>
-					<h5 class="page-break">Frontend</h5>
-					<ol>
-						<li>
-							Used React's Context API as app level state management system
-						</li>
-						<li>Created seperate sections for the 3 features of the app.</li>
-						<li>Provided secure routes for all 3 sections</li>
-						<li>Setup App routes with React Router library</li>
-						<li>
-							The three sections have a common system of submitting the input
-							data to populate it to the database.
-						</li>
-						<li>Search feature is implemented</li>
-						<li>The App is mobile responsive</li>
-					</ol>
-				</div> -->
-
-				<div class="demo">
-					<ul class="demo__links">
-						<li>
-							<a href="https://github.com/akhilbandari9/fuse-social"
-								>Github Repository</a
-							>
-						</li>
-						<li><a href="https://fuse-social.vercel.app">Live Demo</a></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="recipe-finder">
-				<h4>Project - 2</h4>
-				<h5><span>Title : </span>Orange Notes</h5>
-
-				<div class="tech-stack">
-					<h5>Technologies Used</h5>
-					<p class="project-2-list">
-						ReactJs, ContextAPI, NodeJS, Express, MongoDB, Mongoose
-					</p>
-				</div>
-				<div class="details">
-					<h4>Description</h4>
-					<ol>
-						<li>
-							This is a Note taking application inspired from Google Keep. It is
-							a simple application which lets you take notes and organize them
-							as well.
-						</li>
-						<li>
-							It has features like Taking Note, Updating Note, Moving notes to
-							Bin, Restoring from bin, Adding Labels to the notes, Filtering by
-							labels, Adding Colors to notes, Sharing a single note with
-							sharable public link, Toast notifications
-						</li>
-						<li>This is highly performant, has smooth UI, fully responsive.</li>
-						<li class="page-break">
-							All notes are saved to MongoDB in realtime.
-						</li>
-					</ol>
-				</div>
-				<div class="demo">
-					<ul class="demo__links">
-						<li>
-							<a href="https://github.com/akhilbandari9/ornage-notes-client"
-								>Client Code : Github Repository</a
-							>
-						</li>
-						<li>
-							<a href="https://github.com/akhilbandari9/ornage-notes-server"
-								>Server Code : Github Repository</a
-							>
-						</li>
-						<li><a href="https://orange-notes.vercel.app">Live Demo</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="recipe-finder">
-				<h4>Project - 3</h4>
-				<h5><span>Title : </span>Recipe Finder</h5>
-
-				<div class="tech-stack">
-					<h5>Technologies Used</h5>
-					<p class="project-2-list">Html, CSS, JavaScript</p>
-				</div>
-				<div class="details">
-					<h4>Description</h4>
-					<ol>
-						<li>
-							This is a Javascript application which fetches a list of recipes
-							from external REST API, displays recipe information and gives an
-							option to customize the recipe.
-						</li>
-						<li>A simple MVC pattern is implemented in this app.</li>
-						<li>
-							The app mocks template based frontend style of rendering data (no
-							external libraries used).
-						</li>
-						<li>Pagination for the list of results fetched is implemented.</li>
-					</ol>
-				</div>
-				<div class="demo">
-					<ul class="demo__links">
-						<li>
-							<a href="https://github.com/akhilbandari9/recipe-search"
-								>Github Repository</a
-							>
-						</li>
-						<li><a href="https://recipe99.netlify.app/">Live Demo</a></li>
-					</ul>
-				</div>
-			</div>
-		</section>
-		<section class="education">
-			<h2>Education</h2>
-			<h5>Bachelor of Technology ( 2013 - 2017 )</h5>
-			<p><span>Course : </span>Electronics and Communications</p>
-			<p>
-				<span>Institution : </span>Sreenidhi Institute of Science and Technology
-			</p>
-			<p><span>Grades : </span> 74.8%</p>
-			<div class="activities">
-				<h5>Activities</h5>
-				<ul class="activities__list">
-					<li>
-						Contributed to a creative arts club called Inovation and Creativity
-						Club
-					</li>
-					<li>Paper presentation on Industrial Internet</li>
-					<li>Volunteer and participated in various activities by NSS</li>
-				</ul>
-			</div>
-		</section>
-		<section class="personal-info">
-			<h2>Personal information</h2>
-			<div class="info-card">
-				<span class="info-head">Date of Birth : </span>
-				<span class="info-body">19th September 1995</span>
-			</div>
-			<div class="info-card">
-				<span class="info-head">Gender : </span>
-				<span class="info-body">Male</span>
-			</div>
-			<div class="info-card">
-				<span class="info-head">Marital Status : </span>
-				<span class="info-body">Single</span>
-			</div>
-			<div class="info-card">
-				<span class="info-head">Permanent address : </span>
-				<span class="info-body"
-					>3-85, Sulthanabad, Peddapalli, Telangana – 505185</span
-				>
-			</div>
-			<div class="info-card">
-				<span class="info-head">Hobbies : </span>
-				<span class="info-body"
-					>Reading Novels, Creative writing, Watching Movies, Video Games</span
-				>
-			</div>
-		</section>
+							<li>Paper presentation on Industrial Internet</li>
+							<li>Volunteer and participated in various activities by NSS</li>
+						</ul>
+					</div>
+				</section>
+				<section class="mt-2">
+					<h2 class="text-2xl font-medium underline mb-2 text-center">
+						Personal information
+					</h2>
+					<table class="text-left">
+						<tr>
+							<th>Date of Birth</th>
+							<td>19th September 1995</td>
+						</tr>
+						<tr>
+							<th>Gender</th>
+							<td>Male</td>
+						</tr>
+						<tr>
+							<th>Marital Status</th>
+							<td>Unmarried</td>
+						</tr>
+						<tr>
+							<th>Permanent address</th>
+							<td>3-85, Sulthanabad, Peddapalli, Telangana – 505185</td>
+						</tr>
+						<tr>
+							<th>Hobbies</th>
+							<td>
+								Reading Novels, Creative writing, Watching Movies, Video Games
+							</td>
+						</tr>
+					</table>
+				</section>
+			</main>
+		</div>
 	</body>
 </html>
